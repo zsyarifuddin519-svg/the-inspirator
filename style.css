@@ -1,67 +1,160 @@
-body{
-      background:#f3f3f3;
-      color:#333;
-      width:100%:
-      font-family:sans-serif;
-      margin:0 auto;
+/* --- Reset Dasar --- */
+body {
+    margin: 0;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5; /* Abu-abu sangat muda untuk background dasar */
+    color: #333;
 }
 
-.header{
-      width:90%;
-      margin:auto;
-      height:120px;
-      line-height:120px;
-      background:#417aa8;
-      color:#fff;
-}
-.content{
-      width:90%;
-      margin:auto;
-      height:420px;
-      padding:0.1px;
-      background:#fff;
-      color:#333
-}
-.border{
-      border:2px solid #4887b9
-      margin-top:1pc;
-      padding-bottom:1pc;
-      padding-left:2pc;
-      padding-right:2pc;
-}
-.kiri{
-      width:70%;
-      float:left;
-      margin:auto;
-      background:#fff;
-      height:420px;
-}
-.kanan{
-      width:30%;
-      float:left;
-      margin:auto;
-      background:#fff
-      height:420px;
-}
-.undercore{
-      text-decoration:none;
+/* Container untuk menjaga konten di tengah */
+.container {
+    width: 85%;
+    margin: 0 auto;
+    padding: 0 15px;
 }
 
-
-.footer{
-      width:90%;
-      margin:auto;
-      height:40px;
-      line-height:40px;
-      background:#417aa8;
-      color:#fff;
-      margin-bottom:1pc;
+/* --- Bagian Header --- */
+.header {
+    background-color: #000000; /* HITAM */
+    color: #ffffff; /* Teks Putih */
+    padding: 20px 0;
 }
-      
-      
 
+.header h2 {
+    margin: 0;
+    font-size: 24px;
+    letter-spacing: 1px;
+}
 
+/* --- Bagian Menubar Horizontal --- */
+.menu {
+    background-color: #004085; /* BIRU GELAP (Primary Blue) */
+    padding: 10px 0;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
 
+.menu ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    display: flex; /* Membuat menu berjejer horizontal */
+}
 
+.menu ul li {
+    margin-right: 25px;
+}
 
+.menu ul li a {
+    text-decoration: none;
+    color: #ffffff; /* Teks Menu Putih */
+    font-weight: 600;
+    transition: color 0.3s ease;
+}
 
+/* Efek Hover Menu */
+.menu ul li a:hover {
+    color: #cfe2f3; /* Biru sangat muda saat di-hover */
+}
+
+/* --- Tata Letak Konten Utama --- */
+.main-content {
+    display: flex; /* Membuat dua kolom kiri-kanan */
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: space-between;
+}
+
+/* Kolom Kiri */
+.kiri {
+    width: 68%;
+}
+
+/* Kolom Kanan */
+.kanan {
+    width: 28%;
+}
+
+/* --- Gaya Kotak Artikel (Kiri) --- */
+.artikel-box {
+    background-color: #ffffff;
+    border: 1px solid #b8daff; /* Border Biru Muda */
+    border-radius: 5px;
+    padding: 20px;
+    margin-bottom: 20px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+}
+
+.artikel-box h3 {
+    margin-top: 0;
+    color: #004085; /* Judul Biru */
+}
+
+.btn-selengkapnya {
+    background-color: #000000; /* Tombol HITAM */
+    color: white;
+    border: none;
+    padding: 8px 15px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+}
+
+.btn-selengkapnya:hover {
+    background-color: #333333; /* Hitam keabuan saat hover */
+}
+
+/* --- Gaya Sidebar (Kanan) --- */
+.sidebar-box {
+    background-color: #ffffff;
+    padding: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+.sidebar-box h3 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+}
+
+.sidebar-box hr {
+    border: 0;
+    border-top: 1px solid #eee;
+    margin: 15px 0;
+}
+
+.sidebar-box ul {
+    padding: 0;
+    list-style: none;
+}
+
+.sidebar-box ul li {
+    margin-bottom: 10px;
+    border-bottom: 1px solid #f0f0f0;
+    padding-bottom: 5px;
+}
+
+.sidebar-box ul li a {
+    text-decoration: none;
+    color: #0056b3; /* Link Kategori Biru */
+    font-weight: 500;
+}
+
+.sidebar-box ul li a:hover {
+    text-decoration: underline;
+}
+
+/* --- Bagian Footer --- */
+.footer {
+    background-color: #000000; /* HITAM */
+    color: #aaaaaa;
+    text-align: center;
+    padding: 15px 0;
+    margin-top: auto;
+}
+
+.footer p {
+    margin: 0;
+    font-size: 14px;
+}
